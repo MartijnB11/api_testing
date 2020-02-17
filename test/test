@@ -262,7 +262,7 @@
             "parameters": []
         },
         "/sessions/{id}/": {
-            "put": {
+            "get": {
                 "operationId": "Get session by ID",
                 "description": "",
                 "parameters": [],
