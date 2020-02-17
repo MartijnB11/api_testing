@@ -215,7 +215,7 @@
             ]
         },
         "/sessions/": {
-            "get": {
+            "put": {
                 "operationId": "List sessions",
                 "description": "",
                 "parameters": [],
