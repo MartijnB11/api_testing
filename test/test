@@ -1,0 +1,1090 @@
+{
+	"info": {
+		"_postman_id": "858cc175-2c20-4201-8859-f9e1867d49a6",
+		"name": "Test3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "players",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Get player by ID",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": ""
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/players/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "0f55040f-fb8b-44e3-8653-8c2be232a548",
+											"key": "id",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"email\": \"<string>\",\n \"bodyfats\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"bodyfat\": \"<number>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"bodyfat\": \"<number>\"\n  }\n ],\n \"weights\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"weight\": \"<number>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"weight\": \"<number>\"\n  }\n ],\n \"positions\": [\n  {\n   \"position\": \"<string>\",\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\"\n  },\n  {\n   \"position\": \"<string>\",\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\"\n  }\n ],\n \"injuries\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"injury_type_1\": \"<string>\",\n   \"injury_type_2\": \"<string>\",\n   \"injury_type_location\": \"<string>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"injury_type_1\": \"<string>\",\n   \"injury_type_2\": \"<string>\",\n   \"injury_type_location\": \"<string>\"\n  }\n ],\n \"specificpositions\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"specificposition\": \"<string>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"specificposition\": \"<string>\"\n  }\n ],\n \"VO2maxes\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"VO2max\": \"<number>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"VO2max\": \"<number>\"\n  }\n ],\n \"statuses\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"status\": \"<string>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"status\": \"<string>\"\n  }\n ],\n \"lastname\": \"<string>\",\n \"firstname\": \"<string>\",\n \"id\": \"<uuid>\",\n \"position\": \"<string>\",\n \"injury\": \"<string>\",\n \"specificposition\": \"<string>\",\n \"bodyfat\": \"<number>\",\n \"weight\": \"<number>\",\n \"VO2max\": \"<number>\",\n \"status\": \"<string>\",\n \"birthdate\": \"<date>\",\n \"height\": \"<integer>\",\n \"telephone\": \"<string>\",\n \"shirtnumber\": \"<integer>\",\n \"image\": \"<string>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Update player by ID",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": ""
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"<string>\",\n    \"bodyfats\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"bodyfat\": \"<number>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"bodyfat\": \"<number>\"\n        }\n    ],\n    \"weights\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"weight\": \"<number>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"weight\": \"<number>\"\n        }\n    ],\n    \"positions\": [\n        {\n            \"position\": \"<string>\",\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\"\n        },\n        {\n            \"position\": \"<string>\",\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\"\n        }\n    ],\n    \"injuries\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"injury_type_1\": \"<string>\",\n            \"injury_type_2\": \"<string>\",\n            \"injury_type_location\": \"<string>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"injury_type_1\": \"<string>\",\n            \"injury_type_2\": \"<string>\",\n            \"injury_type_location\": \"<string>\"\n        }\n    ],\n    \"specificpositions\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"specificposition\": \"<string>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"specificposition\": \"<string>\"\n        }\n    ],\n    \"VO2maxes\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"VO2max\": \"<number>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"VO2max\": \"<number>\"\n        }\n    ],\n    \"statuses\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"status\": \"<string>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"status\": \"<string>\"\n        }\n    ],\n    \"lastname\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"birthdate\": \"<date>\",\n    \"height\": \"<integer>\",\n    \"telephone\": \"<string>\",\n    \"shirtnumber\": \"<integer>\",\n    \"image\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/players/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "8352254f-4b91-44c4-ab73-d2419dac7f85",
+											"key": "id",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"email\": \"<string>\",\n \"bodyfats\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"bodyfat\": \"<number>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"bodyfat\": \"<number>\"\n  }\n ],\n \"weights\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"weight\": \"<number>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"weight\": \"<number>\"\n  }\n ],\n \"positions\": [\n  {\n   \"position\": \"<string>\",\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\"\n  },\n  {\n   \"position\": \"<string>\",\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\"\n  }\n ],\n \"injuries\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"injury_type_1\": \"<string>\",\n   \"injury_type_2\": \"<string>\",\n   \"injury_type_location\": \"<string>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"injury_type_1\": \"<string>\",\n   \"injury_type_2\": \"<string>\",\n   \"injury_type_location\": \"<string>\"\n  }\n ],\n \"specificpositions\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"specificposition\": \"<string>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"specificposition\": \"<string>\"\n  }\n ],\n \"VO2maxes\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"VO2max\": \"<number>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"VO2max\": \"<number>\"\n  }\n ],\n \"statuses\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"status\": \"<string>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"status\": \"<string>\"\n  }\n ],\n \"lastname\": \"<string>\",\n \"firstname\": \"<string>\",\n \"id\": \"<uuid>\",\n \"position\": \"<string>\",\n \"injury\": \"<string>\",\n \"specificposition\": \"<string>\",\n \"bodyfat\": \"<number>\",\n \"weight\": \"<number>\",\n \"VO2max\": \"<number>\",\n \"status\": \"<string>\",\n \"birthdate\": \"<date>\",\n \"height\": \"<integer>\",\n \"telephone\": \"<string>\",\n \"shirtnumber\": \"<integer>\",\n \"image\": \"<string>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Partial update player by ID",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": ""
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"<string>\",\n    \"bodyfats\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"bodyfat\": \"<number>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"bodyfat\": \"<number>\"\n        }\n    ],\n    \"weights\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"weight\": \"<number>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"weight\": \"<number>\"\n        }\n    ],\n    \"positions\": [\n        {\n            \"position\": \"<string>\",\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\"\n        },\n        {\n            \"position\": \"<string>\",\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\"\n        }\n    ],\n    \"injuries\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"injury_type_1\": \"<string>\",\n            \"injury_type_2\": \"<string>\",\n            \"injury_type_location\": \"<string>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"injury_type_1\": \"<string>\",\n            \"injury_type_2\": \"<string>\",\n            \"injury_type_location\": \"<string>\"\n        }\n    ],\n    \"specificpositions\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"specificposition\": \"<string>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"specificposition\": \"<string>\"\n        }\n    ],\n    \"VO2maxes\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"VO2max\": \"<number>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"VO2max\": \"<number>\"\n        }\n    ],\n    \"statuses\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"status\": \"<string>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"status\": \"<string>\"\n        }\n    ],\n    \"lastname\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"birthdate\": \"<date>\",\n    \"height\": \"<integer>\",\n    \"telephone\": \"<string>\",\n    \"shirtnumber\": \"<integer>\",\n    \"image\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/players/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "f623b925-4504-45c5-bfc2-0d4fe1022c08",
+											"key": "id",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"email\": \"<string>\",\n \"bodyfats\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"bodyfat\": \"<number>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"bodyfat\": \"<number>\"\n  }\n ],\n \"weights\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"weight\": \"<number>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"weight\": \"<number>\"\n  }\n ],\n \"positions\": [\n  {\n   \"position\": \"<string>\",\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\"\n  },\n  {\n   \"position\": \"<string>\",\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\"\n  }\n ],\n \"injuries\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"injury_type_1\": \"<string>\",\n   \"injury_type_2\": \"<string>\",\n   \"injury_type_location\": \"<string>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"injury_type_1\": \"<string>\",\n   \"injury_type_2\": \"<string>\",\n   \"injury_type_location\": \"<string>\"\n  }\n ],\n \"specificpositions\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"specificposition\": \"<string>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"specificposition\": \"<string>\"\n  }\n ],\n \"VO2maxes\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"VO2max\": \"<number>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"VO2max\": \"<number>\"\n  }\n ],\n \"statuses\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"status\": \"<string>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"status\": \"<string>\"\n  }\n ],\n \"lastname\": \"<string>\",\n \"firstname\": \"<string>\",\n \"id\": \"<uuid>\",\n \"position\": \"<string>\",\n \"injury\": \"<string>\",\n \"specificposition\": \"<string>\",\n \"bodyfat\": \"<number>\",\n \"weight\": \"<number>\",\n \"VO2max\": \"<number>\",\n \"status\": \"<string>\",\n \"birthdate\": \"<date>\",\n \"height\": \"<integer>\",\n \"telephone\": \"<string>\",\n \"shirtnumber\": \"<integer>\",\n \"image\": \"<string>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete player by ID",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": ""
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/players/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "c2a2cbcd-82ea-475a-b520-e83a00f3829a",
+											"key": "id",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "List players",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/players/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"players",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"email\": \"<string>\",\n  \"lastname\": \"<string>\",\n  \"firstname\": \"<string>\",\n  \"id\": \"<uuid>\",\n  \"position\": \"<string>\",\n  \"injury\": \"<string>\",\n  \"specificposition\": \"<string>\",\n  \"bodyfat\": \"<number>\",\n  \"weight\": \"<number>\",\n  \"VO2max\": \"<number>\",\n  \"status\": \"<string>\",\n  \"birthdate\": \"<date>\",\n  \"height\": \"<integer>\",\n  \"telephone\": \"<string>\",\n  \"shirtnumber\": \"<integer>\",\n  \"image\": \"<string>\"\n },\n {\n  \"email\": \"<string>\",\n  \"lastname\": \"<string>\",\n  \"firstname\": \"<string>\",\n  \"id\": \"<uuid>\",\n  \"position\": \"<string>\",\n  \"injury\": \"<string>\",\n  \"specificposition\": \"<string>\",\n  \"bodyfat\": \"<number>\",\n  \"weight\": \"<number>\",\n  \"VO2max\": \"<number>\",\n  \"status\": \"<string>\",\n  \"birthdate\": \"<date>\",\n  \"height\": \"<integer>\",\n  \"telephone\": \"<string>\",\n  \"shirtnumber\": \"<integer>\",\n  \"image\": \"<string>\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Create new player",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"<string>\",\n    \"bodyfats\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"bodyfat\": \"<number>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"bodyfat\": \"<number>\"\n        }\n    ],\n    \"weights\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"weight\": \"<number>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"weight\": \"<number>\"\n        }\n    ],\n    \"positions\": [\n        {\n            \"position\": \"<string>\",\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\"\n        },\n        {\n            \"position\": \"<string>\",\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\"\n        }\n    ],\n    \"injuries\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"injury_type_1\": \"<string>\",\n            \"injury_type_2\": \"<string>\",\n            \"injury_type_location\": \"<string>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"injury_type_1\": \"<string>\",\n            \"injury_type_2\": \"<string>\",\n            \"injury_type_location\": \"<string>\"\n        }\n    ],\n    \"specificpositions\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"specificposition\": \"<string>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"specificposition\": \"<string>\"\n        }\n    ],\n    \"VO2maxes\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"VO2max\": \"<number>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"VO2max\": \"<number>\"\n        }\n    ],\n    \"statuses\": [\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"status\": \"<string>\"\n        },\n        {\n            \"valid_from_dt\": \"<dateTime>\",\n            \"valid_to_dt\": \"<dateTime>\",\n            \"status\": \"<string>\"\n        }\n    ],\n    \"lastname\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"birthdate\": \"<date>\",\n    \"height\": \"<integer>\",\n    \"telephone\": \"<string>\",\n    \"shirtnumber\": \"<integer>\",\n    \"image\": \"<string>\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/players/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"players",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"email\": \"<string>\",\n \"bodyfats\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"bodyfat\": \"<number>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"bodyfat\": \"<number>\"\n  }\n ],\n \"weights\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"weight\": \"<number>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"weight\": \"<number>\"\n  }\n ],\n \"positions\": [\n  {\n   \"position\": \"<string>\",\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\"\n  },\n  {\n   \"position\": \"<string>\",\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\"\n  }\n ],\n \"injuries\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"injury_type_1\": \"<string>\",\n   \"injury_type_2\": \"<string>\",\n   \"injury_type_location\": \"<string>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"injury_type_1\": \"<string>\",\n   \"injury_type_2\": \"<string>\",\n   \"injury_type_location\": \"<string>\"\n  }\n ],\n \"specificpositions\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"specificposition\": \"<string>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"specificposition\": \"<string>\"\n  }\n ],\n \"VO2maxes\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"VO2max\": \"<number>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"VO2max\": \"<number>\"\n  }\n ],\n \"statuses\": [\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"status\": \"<string>\"\n  },\n  {\n   \"valid_from_dt\": \"<dateTime>\",\n   \"valid_to_dt\": \"<dateTime>\",\n   \"status\": \"<string>\"\n  }\n ],\n \"lastname\": \"<string>\",\n \"firstname\": \"<string>\",\n \"id\": \"<uuid>\",\n \"position\": \"<string>\",\n \"injury\": \"<string>\",\n \"specificposition\": \"<string>\",\n \"bodyfat\": \"<number>\",\n \"weight\": \"<number>\",\n \"VO2max\": \"<number>\",\n \"status\": \"<string>\",\n \"birthdate\": \"<date>\",\n \"height\": \"<integer>\",\n \"telephone\": \"<string>\",\n \"shirtnumber\": \"<integer>\",\n \"image\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "sessions",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Get session by ID",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": ""
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/sessions/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sessions",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "4d2c373b-abf4-4b46-92bc-ca1bc44387dd",
+											"key": "id",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/sessions/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sessions",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": \"<uuid>\",\n \"start_datetime\": \"<dateTime>\",\n \"end_datetime\": \"<dateTime>\",\n \"source_id\": \"<string>\",\n \"type\": \"<string>\",\n \"title\": \"<string>\",\n \"insert_dt\": \"<dateTime>\",\n \"update_dt\": \"<dateTime>\",\n \"processed_dt\": \"<dateTime>\",\n \"team\": \"<string>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Update session by ID",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": ""
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"start_datetime\": \"<dateTime>\",\n    \"end_datetime\": \"<dateTime>\",\n    \"source_id\": \"<string>\",\n    \"type\": \"<string>\",\n    \"title\": \"<string>\",\n    \"processed_dt\": \"<dateTime>\",\n    \"team\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/sessions/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sessions",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "eeb57c76-9e6e-48f5-9eec-faaa831a33b7",
+											"key": "id",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/sessions/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sessions",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": \"<uuid>\",\n \"start_datetime\": \"<dateTime>\",\n \"end_datetime\": \"<dateTime>\",\n \"source_id\": \"<string>\",\n \"type\": \"<string>\",\n \"title\": \"<string>\",\n \"insert_dt\": \"<dateTime>\",\n \"update_dt\": \"<dateTime>\",\n \"processed_dt\": \"<dateTime>\",\n \"team\": \"<string>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Partial session player by ID",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": ""
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"start_datetime\": \"<dateTime>\",\n    \"end_datetime\": \"<dateTime>\",\n    \"source_id\": \"<string>\",\n    \"type\": \"<string>\",\n    \"title\": \"<string>\",\n    \"processed_dt\": \"<dateTime>\",\n    \"team\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/sessions/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sessions",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "eaa3d039-3c5a-4ae6-8106-eeff254f5c2d",
+											"key": "id",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/sessions/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sessions",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": \"<uuid>\",\n \"start_datetime\": \"<dateTime>\",\n \"end_datetime\": \"<dateTime>\",\n \"source_id\": \"<string>\",\n \"type\": \"<string>\",\n \"title\": \"<string>\",\n \"insert_dt\": \"<dateTime>\",\n \"update_dt\": \"<dateTime>\",\n \"processed_dt\": \"<dateTime>\",\n \"team\": \"<string>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete session by ID",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": ""
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/sessions/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sessions",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"id": "351ed9fd-edbf-4177-8285-d7faa566074d",
+											"key": "id",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/sessions/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"sessions",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "List sessions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/sessions/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sessions",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/sessions/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sessions",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"id\": \"<uuid>\",\n  \"start_datetime\": \"<dateTime>\",\n  \"end_datetime\": \"<dateTime>\",\n  \"source_id\": \"<string>\",\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"insert_dt\": \"<dateTime>\",\n  \"update_dt\": \"<dateTime>\",\n  \"processed_dt\": \"<dateTime>\",\n  \"team\": \"<string>\"\n },\n {\n  \"id\": \"<uuid>\",\n  \"start_datetime\": \"<dateTime>\",\n  \"end_datetime\": \"<dateTime>\",\n  \"source_id\": \"<string>\",\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"insert_dt\": \"<dateTime>\",\n  \"update_dt\": \"<dateTime>\",\n  \"processed_dt\": \"<dateTime>\",\n  \"team\": \"<string>\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Create new session",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"start_datetime\": \"<dateTime>\",\n    \"end_datetime\": \"<dateTime>\",\n    \"source_id\": \"<string>\",\n    \"type\": \"<string>\",\n    \"title\": \"<string>\",\n    \"processed_dt\": \"<dateTime>\",\n    \"team\": \"<string>\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/sessions/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sessions",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/sessions/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sessions",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"id\": \"<uuid>\",\n \"start_datetime\": \"<dateTime>\",\n \"end_datetime\": \"<dateTime>\",\n \"source_id\": \"<string>\",\n \"type\": \"<string>\",\n \"title\": \"<string>\",\n \"insert_dt\": \"<dateTime>\",\n \"update_dt\": \"<dateTime>\",\n \"processed_dt\": \"<dateTime>\",\n \"team\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "auth token create",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e76d5e9b-6c78-430a-aca4-2a5b69f38f2a",
+						"exec": [
+							"var data = pm.response.json();\r",
+							"pm.environment.set(\"token\", data.access);\r",
+							"\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([201,202]);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"\",\n    \"password\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/auth/token/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"auth",
+						"token",
+						""
+					]
+				},
+				"description": "Takes a set of user credentials and returns an access and refresh JSON web\ntoken pair to prove the authentication of those credentials."
+			},
+			"response": [
+				{
+					"name": "Untitled Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"<string>\",\n    \"password\": \"<string>\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/token/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"token",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"email\": \"<string>\",\n \"password\": \"<string>\"\n}"
+				}
+			]
+		},
+		{
+			"name": "List clubs",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/clubs/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"clubs",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Untitled Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clubs/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clubs",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n {\n  \"name\": \"<string>\",\n  \"id\": \"<string>\",\n  \"teams\": [\n   {\n    \"name\": \"<string>\",\n    \"id\": \"<string>\",\n    \"avatar\": \"<string>\"\n   },\n   {\n    \"name\": \"<string>\",\n    \"id\": \"<string>\",\n    \"avatar\": \"<string>\"\n   }\n  ],\n  \"short\": \"<string>\"\n },\n {\n  \"name\": \"<string>\",\n  \"id\": \"<string>\",\n  \"teams\": [\n   {\n    \"name\": \"<string>\",\n    \"id\": \"<string>\",\n    \"avatar\": \"<string>\"\n   },\n   {\n    \"name\": \"<string>\",\n    \"id\": \"<string>\",\n    \"avatar\": \"<string>\"\n   }\n  ],\n  \"short\": \"<string>\"\n }\n]"
+				}
+			]
+		},
+		{
+			"name": "teams read",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/teams/:id/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"teams",
+						":id",
+						""
+					],
+					"variable": [
+						{
+							"id": "f93a40e1-1b29-494d-97b5-db461b216b41",
+							"key": "id",
+							"value": "<string>",
+							"type": "string",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Untitled Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/teams/:id/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"teams",
+								":id",
+								""
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"name\": \"<string>\",\n \"id\": \"<string>\",\n \"avatar\": \"<string>\",\n \"config\": \"<string>\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"id": "baseUrl",
+			"key": "baseUrl",
+			"value": "http://127.0.0.1/api",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
