@@ -1,4 +1,4 @@
-{TEST update MB
+{
     "swagger": "2.0",
     "info": {
         "title": "Opteamal Unified API",
