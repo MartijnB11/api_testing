@@ -126,7 +126,7 @@
             "parameters": []
         },
         "/players/{id}/": {
-            "get": {
+            "put": {
                 "operationId": "Get player by ID",
                 "description": "",
                 "parameters": [],
