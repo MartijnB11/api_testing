@@ -215,7 +215,7 @@
             ]
         },
         "/sessions/": {
-            "get": {
+            "qsd": {
                 "operationId": "List sessions",
                 "description": "",
                 "parameters": [],
